@@ -11,7 +11,6 @@ func grep(pattern string, input []byte ) []string {
 	r, _ := regexp.Compile(pattern)
 
 	match := r.FindAllString(string(input), len(string(input)))
-
 	return match
 
 }
